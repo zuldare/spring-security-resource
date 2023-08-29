@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000
+
+#      client:
+#        registration:
+#          client-oidc:
+#            client-id: oidc-client
+#            client-secret: secret
+#            scope: openid
+#            authorization-grant-type: authorization-code
+#            redirect-uri: http://localhost:8080/login/oauth2/client-oidc
+#
+#        provider:
+#          client-oidc:
+#            issuer-uri: http://localhost:9000
+
+logging:
+  level:
+    org.springframework.security.oauth2: TRACE
